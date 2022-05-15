@@ -1,12 +1,13 @@
 import random
 
+
 def play():
 
     print("*********************************")
     print("******Welcome to Guess It!*******")
     print("*********************************")
 
-    secretNumber = random.randrange(1,101)
+    secretNumber = random.randrange(1, 101)
     totalAttempts = 0
     points = 1000
 
@@ -26,7 +27,7 @@ def play():
         print("Attempt {} of {}".format(round, totalAttempts))
 
         guess_str = input("Type a number between 1 and 100: ")
-        print("You type " , guess_str)
+        print("You type ", guess_str)
         guess = int(guess_str)
 
         if(guess < 1 or guess > 100):
@@ -49,6 +50,7 @@ def play():
             points = points - lost_points
 
     print("Game over!")
-    
+
+
 if(__name__ == "__main__"):
     play()
