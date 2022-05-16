@@ -1,8 +1,8 @@
 import app.hangman as hangman
-import app.guessIt as guessIt
+import app.guess_it as guess_it
 
 
-def chooseGame():
+def choose_game():
 
     print("***********************************")
     print("*********Choose your game!*********")
@@ -17,8 +17,8 @@ def chooseGame():
         hangman.play()
     elif(game == 2):
         print("Playing Guess It")
-        guessIt.play()
+        guess_it.play()
 
 
 if(__name__ == "__main__"):
-    chooseGame()
+    choose_game()
