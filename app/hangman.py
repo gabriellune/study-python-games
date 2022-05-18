@@ -66,6 +66,7 @@ def register_correct_guess(secret_word, guess, correct_letters):
             correct_letters[index] = letter
             index += 1
 
+
 def drawing_the_hanging(mistakes):
     print("  _______     ")
     print(" |/      |    ")
@@ -115,6 +116,7 @@ def drawing_the_hanging(mistakes):
     print(" |            ")
     print("_|___         ")
     print()
+
 
 if __name__ == "__main__":
     play()
